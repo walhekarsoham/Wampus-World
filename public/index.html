@@ -10,75 +10,96 @@
   <link rel="stylesheet" href="styles.css" />
   <style>
     /* ── Digital Heroes footer ── */
-    .dh-footer {
-      margin-top: 2.5rem;
-      padding: 1.25rem 1.5rem;
-      background: rgba(255, 255, 255, 0.04);
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 1rem;
-      font-family: 'DM Sans', sans-serif;
-    }
+    /* ── Digital Heroes footer ── */
+.dh-footer {
+  margin-top: 2.5rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: 'DM Sans', sans-serif;
+  position: relative;
+}
 
-    .dh-author {
-      display: flex;
-      flex-direction: column;
-      gap: 0.15rem;
-    }
+/* Top row - button centered */
+.dh-top-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
-    .dh-author-name {
-      font-family: 'Syne', sans-serif;
-      font-weight: 700;
-      font-size: 0.95rem;
-      color: #ffffff;
-      letter-spacing: 0.01em;
-    }
+/* Bottom row - name left, email right */
+.dh-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 0.25rem;
+}
 
-    .dh-author-email {
-      font-size: 0.82rem;
-      color: rgba(255, 255, 255, 0.5);
-      letter-spacing: 0.01em;
-    }
+.dh-author-name {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #ffffff;
+  letter-spacing: 0.01em;
+}
 
-    .dh-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.45rem;
-      padding: 0.6rem 1.2rem;
-      background: #f5a623;
-      color: #1a1a1a;
-      font-family: 'Syne', sans-serif;
-      font-weight: 700;
-      font-size: 0.82rem;
-      letter-spacing: 0.03em;
-      text-decoration: none;
-      border-radius: 6px;
-      transition: background 0.18s ease, transform 0.12s ease;
-      white-space: nowrap;
-    }
+.dh-author-email {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.01em;
+}
 
-    .dh-btn:hover {
-      background: #fbb740;
-      transform: translateY(-1px);
-    }
+.dh-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.6rem 1.2rem;
+  background: #f5a623;
+  color: #1a1a1a;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.18s ease, transform 0.12s ease;
+  white-space: nowrap;
+}
 
-    .dh-btn:active {
-      transform: translateY(0);
-    }
+.dh-btn:hover {
+  background: #fbb740;
+  transform: translateY(-1px);
+}
 
-    .dh-btn-icon {
-      font-size: 0.9rem;
-    }
+.dh-btn:active {
+  transform: translateY(0);
+}
 
-    @media (max-width: 480px) {
-      .dh-footer {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
+.dh-btn-icon {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  .dh-footer {
+    padding: 1rem;
+  }
+  
+  .dh-bottom-row {
+    flex-direction: column;
+    gap: 0.3rem;
+    align-items: flex-start;
+  }
+  
+  .dh-author-email {
+    font-size: 0.75rem;
+  }
+}
+
+
   </style>
 </head>
 <body>
