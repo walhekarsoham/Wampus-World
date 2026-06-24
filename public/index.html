@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wumpus World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="app-shell">
+
+    <header class="header">
+      <div class="header-left">
+        <div class="logo-mark">W</div>
+        <div>
+          <h1>Wumpus World</h1>
+          <p class="subtitle">Navigate the cave · Grab the gold · Escape alive</p>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="score-chip" id="scoreChip">
+          <span class="score-label">Score</span>
+          <span class="score-value" id="scoreValue">0</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-layout">
+
+      <!-- Board -->
+      <section class="board-wrap">
+        <div class="board" id="board"></div>
+      </section>
+
+      <!-- Side panel -->
+      <aside class="side-panel">
+
+        <div class="info-card status-card">
+          <span class="card-label">Status</span>
+          <p class="card-value" id="statusText">Searching the cave…</p>
+        </div>
+
+        <div class="info-card">
+          <span class="card-label">Senses</span>
+          <div class="percept-row" id="perceptRow">
+            <span class="no-percept">None</span>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <span class="card-label">Inventory</span>
+          <p class="card-value" id="inventoryText">Empty-handed</p>
+        </div>
+
+        <div class="info-card legend-card">
+          <span class="card-label">Legend</span>
+          <ul class="legend-list">
+            <li><span class="leg-badge br">BR</span> Breeze — pit nearby</li>
+            <li><span class="leg-badge st">ST</span> Stench — Wumpus nearby</li>
+            <li><span class="leg-badge gl">GL</span> Glitter — gold here</li>
+            <li><span class="leg-badge pit">PIT</span> Pit (revealed)</li>
+            <li><span class="leg-badge w">W</span> Wumpus (revealed)</li>
+            <li><span class="leg-badge g">G</span> Gold (revealed)</li>
+          </ul>
+        </div>
+
+      </aside>
+    </div>
+
+    <!-- Controls -->
+    <section class="controls-section">
+      <div class="dpad">
+        <button class="dpad-btn" id="moveUp"    data-dir="up">&#9650;</button>
+        <button class="dpad-btn" id="moveLeft"  data-dir="left">&#9664;</button>
+        <div class="dpad-center"></div>
+        <button class="dpad-btn" id="moveRight" data-dir="right">&#9654;</button>
+        <button class="dpad-btn" id="moveDown"  data-dir="down">&#9660;</button>
+      </div>
+      <div class="action-btns">
+        <button class="act-btn grab-btn" id="grabButton">Grab Gold</button>
+        <button class="act-btn new-btn"  id="resetButton">New Game</button>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
