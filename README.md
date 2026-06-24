@@ -8,7 +8,7 @@ An interactive, browser-based implementation of the classic **Wumpus World** AI 
 
 ## 🌐 Live Demo
 
-🔗 **[Play it live on Vercel →](https://your-vercel-url.vercel.app)**
+🔗 **[Play it live on Vercel →]([https://your-vercel-url.vercel.app](https://wampus-world.vercel.app/))**
 
 ---
 
