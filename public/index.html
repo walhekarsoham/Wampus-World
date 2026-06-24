@@ -8,11 +8,81 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* ── Digital Heroes footer ── */
+    .dh-footer {
+      margin-top: 2.5rem;
+      padding: 1.25rem 1.5rem;
+      background: rgba(255, 255, 255, 0.04);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .dh-author {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+
+    .dh-author-name {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: #ffffff;
+      letter-spacing: 0.01em;
+    }
+
+    .dh-author-email {
+      font-size: 0.82rem;
+      color: rgba(255, 255, 255, 0.5);
+      letter-spacing: 0.01em;
+    }
+
+    .dh-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.6rem 1.2rem;
+      background: #f5a623;
+      color: #1a1a1a;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.82rem;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.18s ease, transform 0.12s ease;
+      white-space: nowrap;
+    }
+
+    .dh-btn:hover {
+      background: #fbb740;
+      transform: translateY(-1px);
+    }
+
+    .dh-btn:active {
+      transform: translateY(0);
+    }
+
+    .dh-btn-icon {
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 480px) {
+      .dh-footer {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
 </head>
 <body>
-
   <div class="app-shell">
-
     <header class="header">
       <div class="header-left">
         <div class="logo-mark">W</div>
@@ -30,7 +100,6 @@
     </header>
 
     <div class="main-layout">
-
       <!-- Board -->
       <section class="board-wrap">
         <div class="board" id="board"></div>
@@ -38,24 +107,20 @@
 
       <!-- Side panel -->
       <aside class="side-panel">
-
         <div class="info-card status-card">
           <span class="card-label">Status</span>
           <p class="card-value" id="statusText">Searching the cave…</p>
         </div>
-
         <div class="info-card">
           <span class="card-label">Senses</span>
           <div class="percept-row" id="perceptRow">
             <span class="no-percept">None</span>
           </div>
         </div>
-
         <div class="info-card">
           <span class="card-label">Inventory</span>
           <p class="card-value" id="inventoryText">Empty-handed</p>
         </div>
-
         <div class="info-card legend-card">
           <span class="card-label">Legend</span>
           <ul class="legend-list">
@@ -67,7 +132,6 @@
             <li><span class="leg-badge g">G</span> Gold (revealed)</li>
           </ul>
         </div>
-
       </aside>
     </div>
 
@@ -86,8 +150,24 @@
       </div>
     </section>
 
-  </div>
+    <!-- ── Digital Heroes mandatory footer ── -->
+    <footer class="dh-footer">
+      <div class="dh-author">
+        <span class="dh-author-name">Soham Deshmukh</span>
+        <span class="dh-author-email">soham@example.com</span>
+      </div>
+      <a
+        class="dh-btn"
+        href="https://digitalheroesco.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="dh-btn-icon">⚡</span>
+        Built for Digital Heroes
+      </a>
+    </footer>
 
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
