@@ -117,17 +117,3 @@ This mirrors the logic-based agent described in *AIMA Chapter 7*.
 
 **Soham Walhekar**
 🔗 [Portfolio](https://your-portfolio.com)
-
----
-
-## 🏷️ Mandatory Link
-
-[![Built for Digital Heroes](https://img.shields.io/badge/Built%20for-Digital%20Heroes-blue)](https://digitalheroesco.com)
-
-> This project was built as part of the [Digital Heroes](https://digitalheroesco.com) Custom Software Developer trial task.
-
----
-
-## 📜 License
-
-MIT — free to use, modify, and share.
